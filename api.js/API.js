@@ -29,7 +29,7 @@ if(concat){
     })
 }
 async function weather(a){
-    var t = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=711afa1f3fb247e8b2425806242906&q=${a}&days=3`);
+    var t = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=711afa1f3fb247e8b2425806242906&q=${a}&days=3`);
    
         var a = await t.json();
         displayCurrent(a.location, a.current),
